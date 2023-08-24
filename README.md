@@ -42,4 +42,3 @@ The reported model performance metrics on the test data (unavailable in the prov
 ## Conclusion
 
 The assignment involved building and deploying a machine learning model for customer churn prediction. The SVM model achieved a reasonable F1 score of 0.67, indicating its effectiveness in identifying potential customer churn. The Streamlit web application provides a user-friendly interface for making churn predictions based on customer data.
-URL: https://customer-churn-prediction-mefa6hgmnmgmf8vbq7re9q.streamlit.app/
