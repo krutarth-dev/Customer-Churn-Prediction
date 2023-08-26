@@ -17,8 +17,7 @@ numerical_columns = ['Age', 'Monthly_Bill', 'Total_Usage_GB']
 label_encoder = LabelEncoder()
 data['Gender'] = label_encoder.fit_transform(data['Gender'])
 
-# Exclude non-numeric columns ('CustomerID', 'Name', 'Location') and the target ('Churn') from the features
-X = data.drop(['Churn', 'CustomerID', 'Name', 'Location'], axis=1)  # Features
+X = data.drop('CustomerID', 'Name', 'Location'], axis=1)  # Features
 y = data['Churn']  # Target variable
 
 # Split Data into Training and Testing Sets
@@ -42,13 +41,6 @@ feature_names = list(X.columns)  # Get the feature names used during training
 joblib.dump(feature_names, 'feature_names.pkl')
 joblib.dump(best_svm_model, 'churn_model_svm_improved.pkl')
 
-# You can print model performance metrics (optional)
-# y_pred = best_svm_model.predict(X_test)
-# accuracy = accuracy_score(y_test, y_pred)
-# precision = precision_score(y_test, y_pred)
-# recall = recall_score(y_test, y_pred)
-# f1 = f1_score(y_test, y_pred)
-# conf_matrix = confusion_matrix(y_test, y_pred)
 
 # print("Support Vector Machine (SVM) Model Metrics:")
 # print("Accuracy:", accuracy)
