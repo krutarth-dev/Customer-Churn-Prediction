@@ -12,7 +12,7 @@
     - Identifying numerical columns: Columns like 'Age', 'Monthly_Bill', and 'Total_Usage_GB' were identified as numerical features.
     - Label Encoding: The 'Gender' column was label encoded, converting categorical data (Male/Female) into numerical format (0/1).
 
-3. **Feature Engineering:** After preprocessing, non-numeric columns ('CustomerID', 'Name', 'Location') and the target variable ('Churn') were excluded from the feature set.
+3. **Feature Engineering:** After preprocessing, non-numeric columns ('CustomerID', 'Name', 'Location') were excluded from the feature set.
 
 4. **Data Splitting:** The dataset was split into training and testing sets using an 80-20 split ratio. This allowed for model evaluation.
 
